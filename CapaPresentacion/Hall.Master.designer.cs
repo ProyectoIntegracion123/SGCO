@@ -11,7 +11,7 @@ namespace CapaPresentacion
 {
 
 
-    public partial class Paciente
+    public partial class Hall
     {
 
         /// <summary>

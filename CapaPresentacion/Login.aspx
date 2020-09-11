@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <div class="main-bg">
+        <div class="main-bg">
         <!-- title -->
         <h1>SISTEMA GESTION DE CITAS ODONTOLOGICAS</h1>
         <!-- //title -->
@@ -19,23 +19,23 @@
         <div class="sub-main-w3">
             <div class="bg-content-w3pvt">
                 <div class="top-content-style">
-                    <img src="images/user.jpg" alt="" />
+                    <img src="images/teeth.jpg" alt="" />
                 </div>
-                <form action="#" method="post">
+                <form action="Login.aspx" method="post">
                     <p class="legend">Login<span class="fa fa-hand-o-down"></span></p>
                     <div class="input">
-                        <input type="email" placeholder="Username" name="Name" required />
-                        <span class="fa fa-envelope"></span>
+                          <input type="text" runat="server" id="txtUsuario" placeholder="Username" name="txtUsuario" required /> 
+                          <span class="fa fa-envelope"></span> 
                     </div>
                     <div class="input">
-                        <input type="password" placeholder="Password" name="Password" required />
-                        <span class="fa fa-unlock"></span>
+                        <input type="password" runat="server" id="txtPassword" placeholder="Password" name="txtPassword" required />
+                          <span class="fa fa-unlock"></span>
+ 
                     </div>
-                    <button type="submit" class="btn submit">
-                        <span class="fa fa-sign-in"></span>
-                    </button>
+                    <asp:Button runat="server" type="submit" class="btn submit" Text="Ingresar" Width="200px" OnClick="btn_Ingresar_Click" />
+                    
                 </form>
-                <a href="#" class="bottom-text-w3ls">REGISTRATE</a>
+                <asp:LinkButton runat="server" type="submit" class="btn submit" Text="REGISTRATE" Width="200px" OnClick="LinkButton1_Click" BackColor="white"/>
             </div>
         </div>
         <!-- //content -->
