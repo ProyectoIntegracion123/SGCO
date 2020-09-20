@@ -120,13 +120,16 @@
                 </div>
                 <div class="info">
                         <p style="text-align:center">Datos Personales</p>
-                        <p style="text-align:center">Nombre y Apellidos</p>
-                        <p style="text-align:center">Edad</p>
-                        <p style="text-align:center">Correo</p>
+                        <div style="margin-left: auto; margin-right: auto; text-align: center;">
+                        <asp:Label ID="nombre" Text="Nombre" runat="server"> Nombre</asp:Label><div />
+                        <div style="margin-left: auto; margin-right: auto; text-align: center;">
+                        <asp:Label ID="apellidos" Text="Apellidos" runat="server"> Apellidos</asp:Label><div />
+                        <div style="margin-left: auto; margin-right: auto; text-align: center;">                        
+                        <asp:Label ID="edad" Text="Edad" runat="server"> Edad</asp:Label> <div />
                  </div>
                 <ul class="sidebar-menu">
                     <li>
-                        <a href="#" style="text-align:center">
+                        <a href="EditarPaciente.aspx" style="text-align:center">
                             <i class="ion-android-settings"></i>
                             <span>Actualizar Datos</span>
                         </a>

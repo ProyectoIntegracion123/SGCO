@@ -25,14 +25,14 @@
                     <p class="legend">Login<span class="fa fa-hand-o-down"></span></p>
                     <div class="input">
                           <input type="text" runat="server" id="txtUsuario" placeholder="Username" name="txtUsuario" required /> 
-                          <span class="fa fa-envelope"></span> 
+                          <span class="fa fa-user"></span> 
                     </div>
                     <div class="input">
                         <input type="password" runat="server" id="txtPassword" placeholder="Password" name="txtPassword" required />
                           <span class="fa fa-unlock"></span>
  
                     </div>
-                    <asp:Button runat="server" type="submit" class="btn submit" Text="Ingresar" Width="200px" OnClick="btn_Ingresar_Click" />
+                    <asp:Button runat="server" type="submit" class="btn submit" Text="INGRESAR" Width="200px" OnClick="btn_Ingresar_Click" />
                     
                 </form>
                 <asp:LinkButton runat="server" type="submit" class="btn submit" Text="REGISTRATE" Width="200px" OnClick="LinkButton1_Click" BackColor="white"/>

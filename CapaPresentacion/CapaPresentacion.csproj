@@ -53,6 +53,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -220,6 +221,7 @@
     <Content Include="css\Style.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
+    <Content Include="EditarPaciente.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\bg2.jpg" />
@@ -386,6 +388,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditarPaciente.aspx.cs">
+      <DependentUpon>EditarPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarPaciente.aspx.designer.cs">
+      <DependentUpon>EditarPaciente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Hall.Master.cs">
       <DependentUpon>Hall.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

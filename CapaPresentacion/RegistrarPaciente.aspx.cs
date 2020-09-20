@@ -28,7 +28,8 @@ namespace CapaPresentacion
             objPaciente.edad= Convert.ToInt32(Edad.Text);
             objPaciente.telefono = Telefono.Text;
             objPaciente.direccion =Direccion.Text;
-            objPaciente.fecha_nac = Convert.ToDateTime(fechanac.Text);
+            String fechanac = fn_anio.Text + "-" +fn_mes.Text + "-" + fn_dia.Text;
+            objPaciente.fecha_nac = Convert.ToDateTime(fechanac);
             objPaciente.estado = "1";
             objPaciente.usuario = "1";
 
@@ -41,6 +42,8 @@ namespace CapaPresentacion
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
+
+         
             //Registro del paciente
             CapaEntidades.Paciente objPaciente = GetEntity();
             //Enviar a la capa Logica de Negocio
@@ -48,6 +51,7 @@ namespace CapaPresentacion
             if (response == true)
             {
                 Response.Write("<script>alert('REGISTRO CORRECTO.')</script>");
+                Response.Redirect("Login.aspx");
             }
             else
             {

@@ -15,49 +15,57 @@
                          <label>NOMBRES</label>
                      </div>
                      <div class="form-group">
-                         <asp:TextBox ID="txtNombres" runat="server" Text="" CssClass="form-control" Width="235px"></asp:TextBox>
+                         <asp:TextBox ID="txtNombres" runat="server" Text="" CssClass="form-control" Width="235px" MaxLength="30" ></asp:TextBox>
+             
                      </div>
                      <div class="form-group">
                          <label>APELLIDOS</label>
                      </div>
                      <div class="form-group">
-                         <asp:TextBox ID="txtApellidos" runat="server" Text="" CssClass="form-control" Width="232px"></asp:TextBox>
+                         <asp:TextBox ID="txtApellidos" runat="server" Text="" CssClass="form-control" Width="232px" MaxLength="30"></asp:TextBox>
                      </div>     
                      <div class="form-group">
                          <label>DNI</label>
                      </div>
                      <div class="form-group">
-                         <asp:TextBox ID="DNI" runat="server" Text="" CssClass="form-control" Width="232px"></asp:TextBox>
+                         <asp:TextBox ID="DNI" runat="server" Text="" CssClass="form-control" Width="232px" MaxLength="8"></asp:TextBox>
                      </div>  
                      <div class="form-group">
-                         <label>Edad</label>
+                         <label>EDAD</label>
                      </div>
                      <div class="form-group">
-                         <asp:TextBox ID="Edad" runat="server" Text="" CssClass="form-control" Width="232px"></asp:TextBox>
+                         <asp:TextBox ID="Edad" runat="server" Text="" CssClass="form-control" Width="232px" MaxLength="2"></asp:TextBox>
                      </div>    
                      <div class="form-group">
-                         <label>Telefono</label>
+                         <label>N° CELULAR</label>
                      </div>
                      <div class="form-group">
-                         <asp:TextBox ID="Telefono" runat="server" Text="" CssClass="form-control" Width="232px"></asp:TextBox>
+                         <asp:TextBox ID="Telefono" runat="server" Text="" CssClass="form-control" Width="232px" MaxLength="9"></asp:TextBox>
                      </div>   
                        <div class="form-group">
                          <label>Direccion</label>
                      </div>
                      <div class="form-group">
-                         <asp:TextBox ID="Direccion" runat="server" Text="" CssClass="form-control" Width="232px"></asp:TextBox>
+                         <asp:TextBox ID="Direccion" runat="server" Text="" CssClass="form-control" Width="232px" MaxLength="30"></asp:TextBox>
                      </div>   
                      <div class="form-group">
-                         <label>Fecha de Nacimiento</label>
+                         <label>Fecha de Nacimiento</label> 
+                     </div>
+                      <div class="form-group">
+                         <label>Dia</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                         <label>Mes</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                         <label>Año</label> 
                      </div>
                      <div class="form-group">
-                         <asp:TextBox ID="fechanac" runat="server" Text="" CssClass="form-control" Width="232px"></asp:TextBox>
+                         <asp:TextBox ID="fn_dia" runat="server" Text=""  placeholder="DD" CssClass="form-control" Width="50px" MaxLength="2" ></asp:TextBox>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                         <asp:TextBox ID="fn_mes" runat="server" Text=""  placeholder="MM" CssClass="form-control" Width="50px" MaxLength="2" ></asp:TextBox>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                         <asp:TextBox ID="fn_anio" runat="server" Text=""  placeholder="YYYY" CssClass="form-control" Width="50px" MaxLength="4" ></asp:TextBox>
                      </div>  
                       <div class="form-group">
                          <label>Contraseña</label>
                      </div>
                      <div class="form-group">
-                         <asp:TextBox ID="contraseña" runat="server" Text="" CssClass="form-control" Width="232px"></asp:TextBox>
+                         <asp:TextBox ID="contraseña" runat="server" Text="" CssClass="form-control" Width="232px" TextMode="Password"></asp:TextBox>
                      </div>   
                  </div>
              </div>

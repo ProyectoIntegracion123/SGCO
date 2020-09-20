@@ -23,21 +23,12 @@ namespace CapaPresentacion
 
                 String idPaciente =  String.Format("{0,8}",Request.Form["txtUsuario"]);
                 String contra = String.Format("{0,4}", Request.Form["txtPassword"]);
-            /*  String userName = "jorge";
-                String passName = "jorge";
-                if(user.Equals(userName) && password.Equals(passName))
-                {
-                 Response.Write("<script>alert('USUARIO CORRECTO')</script>");
-                }
-                else
-                {
-                 Response.Write("<script>alert('USUARIO INCORRECTO')</script>");
-                }*/
+           
             CapaEntidades.Paciente objPaciente = PacienteLN.getInstance().AccesoSistema(idPaciente, contra);
 
             if(objPaciente != null)
             {
-                Response.Write("<script>alert('USUARIO CORRECTO.')</script>");
+                Session["USER_ID"] = idPaciente;
                 Response.Redirect("PrincipalPaciente.aspx");
             }
             else

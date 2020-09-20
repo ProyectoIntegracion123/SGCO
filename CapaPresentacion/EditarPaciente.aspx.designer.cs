@@ -11,7 +11,7 @@ namespace CapaPresentacion
 {
 
 
-    public partial class RegistrarPaciente
+    public partial class EditarPaciente
     {
 
         /// <summary>
@@ -60,6 +60,15 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.TextBox Telefono;
 
         /// <summary>
+        /// TelefonoNew control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TelefonoNew;
+
+        /// <summary>
         /// Direccion control.
         /// </summary>
         /// <remarks>
@@ -69,31 +78,22 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.TextBox Direccion;
 
         /// <summary>
-        /// fn_dia control.
+        /// DireccionNew control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fn_dia;
+        protected global::System.Web.UI.WebControls.TextBox DireccionNew;
 
         /// <summary>
-        /// fn_mes control.
+        /// fechanac control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fn_mes;
-
-        /// <summary>
-        /// fn_anio control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fn_anio;
+        protected global::System.Web.UI.WebControls.TextBox fechanac;
 
         /// <summary>
         /// contraseña control.
@@ -105,13 +105,22 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.TextBox contraseña;
 
         /// <summary>
-        /// btnRegistrar control.
+        /// btnVer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistrar;
+        protected global::System.Web.UI.WebControls.Button btnVer;
+
+        /// <summary>
+        /// btnGuardar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGuardar;
 
         /// <summary>
         /// btnCancelar control.
