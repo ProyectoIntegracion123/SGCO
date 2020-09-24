@@ -22,7 +22,7 @@ namespace CapaPresentacion
         {
 
                 String idPaciente =  String.Format("{0,8}",Request.Form["txtUsuario"]);
-                String contra = String.Format("{0,4}", Request.Form["txtPassword"]);
+                String contra = String.Format("{0,3}", Request.Form["txtPassword"]);
            
             CapaEntidades.Paciente objPaciente = PacienteLN.getInstance().AccesoSistema(idPaciente, contra);
 
