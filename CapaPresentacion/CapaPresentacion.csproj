@@ -381,6 +381,7 @@
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="PrincipalAdministrador.aspx" />
     <Content Include="PrincipalPaciente.aspx" />
     <Content Include="RegistrarPaciente.aspx" />
     <Content Include="styles\font-awesome.min.css" />
@@ -415,6 +416,20 @@
     </Compile>
     <Compile Include="Paciente.Master.designer.cs">
       <DependentUpon>Paciente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador.Master.cs">
+      <DependentUpon>Administrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.Master.designer.cs">
+      <DependentUpon>Administrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalAdministrador.aspx.cs">
+      <DependentUpon>PrincipalAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrincipalAdministrador.aspx.designer.cs">
+      <DependentUpon>PrincipalAdministrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="PrincipalPaciente.aspx.cs">
       <DependentUpon>PrincipalPaciente.aspx</DependentUpon>
@@ -453,6 +468,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Hall.Master" />
     <None Include="packages.config" />
+    <Content Include="Administrador.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
