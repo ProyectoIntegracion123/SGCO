@@ -36,7 +36,7 @@ namespace CapaPresentacion
             using (SqlConnection sqlCon = new SqlConnection(connectionString))
             {
                 sqlCon.Open();
-                SqlDataAdapter sqlDa = new SqlDataAdapter("select ha.idHorario, a.nombreAlumno,ho.fecha,ho.turno from Alumno a inner join Horario_has_Alumno  ha on   a.idAlumno=ha.idAlumno inner join Horario ho on ho.idHorario = ha.idHorario where a.idAlumno =" + buscar+"", sqlCon);
+                SqlDataAdapter sqlDa = new SqlDataAdapter("select ha.idHorario,a.idAlumno, a.nombreAlumno,ho.fecha,ho.turno from Alumno a inner join Horario_has_Alumno  ha on   a.idAlumno=ha.idAlumno inner join Horario ho on ho.idHorario = ha.idHorario where a.idAlumno =" + buscar+"", sqlCon);
                 sqlDa.Fill(dtbl);
             }
             if (dtbl.Rows.Count > 0)

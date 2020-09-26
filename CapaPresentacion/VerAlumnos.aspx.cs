@@ -6,6 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+using CapaLogicaNegocio;
+using CapaEntidades;
+
 namespace CapaPresentacion
 {
     public partial class VerAlumnos : System.Web.UI.Page
@@ -21,7 +24,10 @@ namespace CapaPresentacion
 
         void PopulateGridView()
         {
-            DataTable dtbl = new DataTable();
+             List<Alumno> alumnos = AlumnoLN.getInstance().ListarAlumnos();
+            listAlumnos.DataSource=alumnos;
+            listAlumnos.DataBind();
+            /*DataTable dtbl = new DataTable();
             using (SqlConnection sqlCon= new SqlConnection(connectionString))
             {
                 sqlCon.Open();
@@ -43,7 +49,7 @@ namespace CapaPresentacion
                 listAlumnos.Rows[0].Cells[0].ColumnSpan = dtbl.Columns.Count;
                 listAlumnos.Rows[0].Cells[0].Text = "No data";
                 listAlumnos.Rows[0].Cells[0].HorizontalAlign = HorizontalAlign.Center;
-            }
+            }*/
         }
 
         protected void listAlumnos_RowCommand(object sender, GridViewCommandEventArgs e)

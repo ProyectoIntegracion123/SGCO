@@ -36,6 +36,17 @@
                             <asp:TextBox ID="txtHorarioFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
+                    <asp:TemplateField HeaderText="IDAlum">
+                        <ItemTemplate>
+                            <asp:Label Text='<%# Eval("idAlumno") %>' runat="server" />
+                        </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtAlumno" Text='<%# Eval("idAlumno") %>' runat="server" />
+                        </EditItemTemplate>
+                        <FooterTemplate>
+                            <asp:TextBox ID="txtAlumnoFooter" runat="server" />
+                        </FooterTemplate>
+                    </asp:TemplateField>
                     <asp:TemplateField HeaderText="Nombre">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("nombreAlumno") %>' runat="server" />
