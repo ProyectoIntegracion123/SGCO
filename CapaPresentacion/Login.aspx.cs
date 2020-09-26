@@ -23,13 +23,21 @@ namespace CapaPresentacion
 
                 String idPaciente =  String.Format("{0,4}",Request.Form["txtUsuario"]);
                 String contra = String.Format("{0,3}", Request.Form["txtPassword"]);
-           
-        if(idPaciente.Equals("admin"))
+
+            if (idPaciente.Equals("admin"))
             {
                 Response.Redirect("VerAlumnos.aspx");
             }
             else
             {
+                if (idPaciente.Equals("juan"))
+                {
+                    Response.Redirect("StudentView.aspx");
+                }
+                else
+                {
+
+                
                 CapaEntidades.Paciente objPaciente = PacienteLN.getInstance().AccesoSistema(idPaciente, contra);
 
                 if (objPaciente != null)
@@ -41,11 +49,13 @@ namespace CapaPresentacion
                 {
                     Response.Write("<script>alert('USUARIO INCORRECTO.')</script>");
                 }
+                }
             }
-
-
-
         }
+
+
+
+    }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {

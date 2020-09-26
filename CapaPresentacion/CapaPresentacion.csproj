@@ -390,6 +390,7 @@
     <Content Include="PrincipalAdministrador.aspx" />
     <Content Include="PrincipalPaciente.aspx" />
     <Content Include="RegistrarPaciente.aspx" />
+    <Content Include="StudentView.aspx" />
     <Content Include="styles\font-awesome.min.css" />
     <Content Include="styles\style.css" />
     <Content Include="VerAlumnos.aspx" />
@@ -460,6 +461,20 @@
     <Compile Include="RegistrarPaciente.aspx.designer.cs">
       <DependentUpon>RegistrarPaciente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView.aspx.cs">
+      <DependentUpon>StudentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentView.aspx.designer.cs">
+      <DependentUpon>StudentView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="VerAlumnos.aspx.cs">
       <DependentUpon>VerAlumnos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -490,6 +505,7 @@
     <Content Include="Hall.Master" />
     <None Include="packages.config" />
     <Content Include="Administrador.Master" />
+    <Content Include="Student.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
