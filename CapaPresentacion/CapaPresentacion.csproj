@@ -224,6 +224,7 @@
     <Content Include="EditarPaciente.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GestionHorario.aspx" />
     <Content Include="images\addnew.png" />
     <Content Include="images\bg2.jpg" />
     <Content Include="images\cancel.png" />
@@ -401,6 +402,13 @@
     </Compile>
     <Compile Include="EditarPaciente.aspx.designer.cs">
       <DependentUpon>EditarPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionHorario.aspx.cs">
+      <DependentUpon>GestionHorario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionHorario.aspx.designer.cs">
+      <DependentUpon>GestionHorario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Hall.Master.cs">
       <DependentUpon>Hall.Master</DependentUpon>

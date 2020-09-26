@@ -14,7 +14,7 @@
         <div class="main-bg">
         <!-- title -->
         <h1>SISTEMA GESTION DE CITAS ODONTOLOGICAS</h1>
-        <!-- //title -->
+        <!-- title -->
         <!-- content -->
         <div class="sub-main-w3">
             <div class="bg-content-w3pvt">

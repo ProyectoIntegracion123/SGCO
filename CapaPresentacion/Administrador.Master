@@ -129,21 +129,16 @@
                  </div>
                 <ul class="sidebar-menu">
                     <li>
-                        <a href="EditarPaciente.aspx" style="text-align:center">
+                        <a href="VerAlumnos.aspx" style="text-align:center">
                             <i class="ion-android-settings"></i>
-                            <span>Listar Alumno</span>
+                            <span>Ver Alumno</span>
                         </a>
                     </li>
+                   
                     <li>
-                        <a href="EditarPaciente.aspx" style="text-align:center">
+                        <a href="GestionHorario.aspx" style="text-align:center">
                             <i class="ion-android-settings"></i>
-                            <span>Añadir Alumno</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="EditarPaciente.aspx" style="text-align:center">
-                            <i class="ion-android-settings"></i>
-                            <span>Editar Horario</span>
+                            <span>Gestionar Horario</span>
                         </a>
                     </li>
                 </ul>

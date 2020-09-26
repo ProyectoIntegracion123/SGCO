@@ -1,23 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Administrador.Master" AutoEventWireup="true" CodeBehind="PrincipalAdministrador.aspx.cs" Inherits="CapaPresentacion.PrincipalAdministrador" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <section class="content-header">
+        
+    </section>
 
-<DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:GridView ID="listAlumnos" runat="server" AutoGenerateColumns="false">
-                <Columns>
-                    <asp:BoundField DataField="idAlumno" HeaderText="ID ALUMNO" />
-                    <asp:BoundField DataField="nombreAlumno" HeaderText="NOMBRES" />
-                    <asp:BoundField DataField="apellidoAlumno" HeaderText="APELLIDOS" />
-                    <asp:BoundField DataField="telefono" HeaderText="TELEFONO" />
-                </Columns>
-            </asp:GridView>
+    <section class="content">
+        <div class="row">
+            <div class="form-group">
+            <label>Código Alumno: </label>
+            </div>
+            <div class="form-group">
+                <asp:TextBox ID="txtBuscar" runat="server"></asp:TextBox>
+            </div>
+            <div>
+                <asp:Buttonrunat="server" CssClass="btn btn-primary" Width="100px"Text="Buscar"/>
+            </div>
         </div>
-    </form>
-</body>
-</html>
+        
+     </section>
+</asp:Content>
