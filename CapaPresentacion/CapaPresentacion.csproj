@@ -224,7 +224,12 @@
     <Content Include="EditarPaciente.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\addnew.png" />
     <Content Include="images\bg2.jpg" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\save.png" />
     <Content Include="images\teeth.jpg" />
     <Content Include="img\ajax-loader.gif" />
     <Content Include="img\ajax-loader1.gif" />
@@ -386,6 +391,7 @@
     <Content Include="RegistrarPaciente.aspx" />
     <Content Include="styles\font-awesome.min.css" />
     <Content Include="styles\style.css" />
+    <Content Include="VerAlumnos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -445,6 +451,13 @@
     </Compile>
     <Compile Include="RegistrarPaciente.aspx.designer.cs">
       <DependentUpon>RegistrarPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerAlumnos.aspx.cs">
+      <DependentUpon>VerAlumnos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerAlumnos.aspx.designer.cs">
+      <DependentUpon>VerAlumnos.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
