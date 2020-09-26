@@ -67,6 +67,17 @@
                             <asp:TextBox ID="txtTurnoFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
+                     <asp:TemplateField HeaderText="USUARIO">
+                        <ItemTemplate>
+                            <asp:Label Text='<%# Eval("usuario") %>' runat="server" />
+                        </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtUsuario" Text='<%# Eval("usuario") %>' runat="server" />
+                        </EditItemTemplate>
+                        <FooterTemplate>
+                            <asp:TextBox ID="txtUsuarioFooter" runat="server" />
+                        </FooterTemplate>
+                    </asp:TemplateField>
                     <asp:TemplateField>
                         <ItemTemplate>
                             <asp:ImageButton ImageUrl="~/images/edit.png" runat="server" CommandName="Edit" ToolTip="Edit" Width="20px" Height="20px"/>

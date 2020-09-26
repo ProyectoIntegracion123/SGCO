@@ -62,13 +62,14 @@ namespace CapaPresentacion
                 using (SqlConnection sqlCon = new SqlConnection(connectionString))
                 {
                     sqlCon.Open();
-                    string query = "INSERT INTO Alumno (idAlumno,nombreAlumno,apellidoAlumno,telefono,turno) VALUES (@idAlumno,@nombreAlumno,@apellidoAlumno,@telefono,@turno)";
+                    string query = "INSERT INTO Alumno (idAlumno,nombreAlumno,apellidoAlumno,telefono,turno,usuario) VALUES (@idAlumno,@nombreAlumno,@apellidoAlumno,@telefono,@turno,@usuario)";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                     sqlCmd.Parameters.AddWithValue("@idAlumno",(listAlumnos.FooterRow.FindControl("txtIDFooter") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@nombreAlumno", (listAlumnos.FooterRow.FindControl("txtNombreFooter") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@apellidoAlumno", (listAlumnos.FooterRow.FindControl("txtApellidoFooter") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@telefono", (listAlumnos.FooterRow.FindControl("txtTelefonoFooter") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@turno", (listAlumnos.FooterRow.FindControl("txtTurnoFooter") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@usuario", (listAlumnos.FooterRow.FindControl("txtUsuarioFooter") as TextBox).Text.Trim());
                     sqlCmd.ExecuteNonQuery();
                     PopulateGridView();
                     lblSuccesMessage.Text = "Nuevo Alumno Agregado";

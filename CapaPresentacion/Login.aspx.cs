@@ -21,21 +21,30 @@ namespace CapaPresentacion
         protected void btn_Ingresar_Click(object sender, EventArgs e)
         {
 
-                String idPaciente =  String.Format("{0,8}",Request.Form["txtUsuario"]);
+                String idPaciente =  String.Format("{0,4}",Request.Form["txtUsuario"]);
                 String contra = String.Format("{0,3}", Request.Form["txtPassword"]);
            
-            CapaEntidades.Paciente objPaciente = PacienteLN.getInstance().AccesoSistema(idPaciente, contra);
-
-            if(objPaciente != null)
+        if(idPaciente.Equals("admin"))
             {
-                Session["USER_ID"] = idPaciente;
-                Response.Redirect("PrincipalPaciente.aspx");
+                Response.Redirect("VerAlumnos.aspx");
             }
             else
             {
-                Response.Write("<script>alert('USUARIO INCORRECTO.')</script>");
+                CapaEntidades.Paciente objPaciente = PacienteLN.getInstance().AccesoSistema(idPaciente, contra);
+
+                if (objPaciente != null)
+                {
+                    Session["USER_ID"] = idPaciente;
+                    Response.Redirect("PrincipalPaciente.aspx");
+                }
+                else
+                {
+                    Response.Write("<script>alert('USUARIO INCORRECTO.')</script>");
+                }
             }
-             
+
+
+
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)

@@ -37,7 +37,7 @@ namespace CapaAccesoDatos
                 {
                     while (dr.Read())
                     {
-                        Alumno alu = new Alumno(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString());
+                        Alumno alu = new Alumno(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString());
                         alumno.Add(alu);
                     }
                 }
